@@ -100,7 +100,7 @@ class TestBooksCollector:
         collector.delete_book_from_favorites("Оно")
         assert collector.get_list_of_favorites_books() == ["1984", "Незнайка"]
 
-    # получаем список избранных книг
+    # Получаем список избранных книг
     def test_get_list_of_favorites_books(self):
         collector = BooksCollector()
         collector.favorites = ["1984", "Маленький принц", "Mы"]
